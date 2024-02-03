@@ -37,7 +37,7 @@ const Main: React.FC = () => {
         setSearch(transcript);
     }
 
-    const selectImage = async (e) => {
+    const selectImage = async (e: any) => {
         const file = e.target.files[0];
         if (!file) return;
 
@@ -98,7 +98,7 @@ const Main: React.FC = () => {
                     type="file"
                     id="imageInput"
                     style={{ display: "none" }}
-                    onChange={(e) => selectImage(e)}
+                    onChange={(e) => selectImage(e)} 
                 />
             </form>
             <div className="flex mt-7">
@@ -107,10 +107,10 @@ const Main: React.FC = () => {
                     onClick={(e) => onSearchSubmit(e)}>Google Search</button>
                 <button 
                     className="bg-slate-100 py-2 px-4 text-sm  rounded hover:border"
-                    onClick={() => router.push('https://www.google.com/doodles')}>I'm Feeling Lucky</button>
+                    onClick={() => router.push('https://www.google.com/doodles')}>I am Feeling Lucky</button>
             </div>
         </div>
-    )
+    );
 }
 
 export default Main;

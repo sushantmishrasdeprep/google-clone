@@ -7,9 +7,9 @@ let nextConfig = {
           pathname: `/photo-*`, // Optional: Match specific paths
         },
         {
-          protocol: 'https',
-          hostname: 'www.google.com', // Updated hostname
-          pathname: '/images/branding/googlelogo*', // Match specific paths
+          protocol: `https`,
+          hostname: `www.google.com`, // Updated hostname
+          //pathname: `/images/branding/googlelogo*`, // Match specific paths
         },
       ],
     },
